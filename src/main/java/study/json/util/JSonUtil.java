@@ -1,5 +1,6 @@
 package study.json.util;
 
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -21,6 +22,17 @@ public class JSonUtil {
 		}catch(Exception e) {
 			LOG.log(e);
 		}
+	}
+	
+	public static <T> T fromJson(String fileName, Class<T> t) {
+		Gson gson = new Gson();
+		try(FileReader reader = new FileReader("output/"+fileName)){
+			T s =  gson.fromJson(reader, t);
+			return s;
+		}catch(Exception e) {
+			LOG.log(e);
+		}
+		return null;
 	}
 
 }

@@ -93,10 +93,24 @@ public class Main {
 			LOG.log(e);
 		}
 	}
-	
+	public void readJsonIntoObjects() {
+		EmployeeList employees = JSonUtil.fromJson("employees.json", EmployeeList.class);
+		LOG.log("Size of employees Retrieved from database = " + employees.getEmployees().size());
+		DepartmentList departments =JSonUtil.fromJson("departments.json", DepartmentList.class);
+		LOG.log("Size of department Retrieved from database = " + departments.getDepartments().size());
+		SalaryList salaries = JSonUtil.fromJson("salaries.json",SalaryList.class);
+		LOG.log("Size of Salaries Retrieved from database = " + salaries.getSalaries().size());
+		RoleList roles = JSonUtil.fromJson("roles.json",RoleList.class);
+		LOG.log("Size of Roles Retrieved from database = " + roles.getRoles().size());
+		EmployeeInDepartmentList employeesInDepartment = JSonUtil.fromJson("employeesInDepartment.json",EmployeeInDepartmentList.class);
+		LOG.log("Size of Employees in Department Retrieved from database = " + employeesInDepartment.getEmployeesInDepartment().size());
+		ManagerOfDepartmentList managers = JSonUtil.fromJson("managers.json", ManagerOfDepartmentList.class);
+		LOG.log("Size of Manager Of Department Retrieved from database = " + managers.getManagerOfDepartment().size());
+	}
 	public static void main(String[] args) {
 		Main main = new Main();
-		main.convertSchemaToJson();
+		main.readJsonIntoObjects();
+		//main.convertSchemaToJson();		
 		//LOG.log("Size of employees Retrieved from database = " + main.getAllEmployees());
 		//LOG.log("Size of department Retrieved from database = " + main.getAllDepartments());
 		//LOG.log("Size of Salaries Retrieved from database = " + main.getAllSalaries().size());
