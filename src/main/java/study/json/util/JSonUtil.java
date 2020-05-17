@@ -12,13 +12,13 @@ import study.logger.util.LOG;
 
 public class JSonUtil {
 
-	public static void toJson(Object o, String fileName) throws JsonIOException, IOException {
+	public static <T> void toJson(T t, String fileName) throws JsonIOException, IOException {
 		Gson gson = new GsonBuilder()
 				.setPrettyPrinting()
 				.serializeNulls()
 				.create();
 		try(FileWriter writer = new FileWriter("output/"+fileName)){
-			gson.toJson(o, writer);
+			gson.toJson(t, writer);
 		}catch(Exception e) {
 			LOG.log(e);
 		}
