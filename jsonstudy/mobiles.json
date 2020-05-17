@@ -1,0 +1,74 @@
+{
+  "mobiles": [
+    {
+      "mobileId": 10001,
+      "mobileCompanyName": "Samsung",
+      "osName": "Android",
+      "price": 12000,
+      "color": "Black"
+    },
+    {
+      "mobileId": 10002,
+      "mobileCompanyName": "Samsung",
+      "osName": "Android",
+      "price": 14000,
+      "color": "White"
+    },
+    {
+      "mobileId": 10003,
+      "mobileCompanyName": "Samsung",
+      "osName": "Android",
+      "price": 16000,
+      "color": "Gold"
+    },
+    {
+      "mobileId": 10004,
+      "mobileCompanyName": "Sony Ericsson",
+      "osName": "Android",
+      "price": 12000,
+      "color": "Black"
+    },
+    {
+      "mobileId": 10005,
+      "mobileCompanyName": "Oppo",
+      "osName": "Android",
+      "price": 12000,
+      "color": "White"
+    },
+    {
+      "mobileId": 10006,
+      "mobileCompanyName": "Oppo",
+      "osName": "Android",
+      "price": 13500,
+      "color": "Black"
+    },
+    {
+      "mobileId": 10007,
+      "mobileCompanyName": "Nokia",
+      "osName": "Windows",
+      "price": 13500,
+      "color": "Black"
+    },
+    {
+      "mobileId": 10008,
+      "mobileCompanyName": "Nokia",
+      "osName": "Windows",
+      "price": 15500,
+      "color": "Red"
+    },
+    {
+      "mobileId": 10009,
+      "mobileCompanyName": "MI",
+      "osName": "Android",
+      "price": 16500,
+      "color": "Red"
+    },
+    {
+      "mobileId": 10010,
+      "mobileCompanyName": "MI Note",
+      "osName": "Android",
+      "price": 13500,
+      "color": "Gold"
+    }
+  ]
+}
